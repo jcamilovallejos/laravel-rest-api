@@ -21,6 +21,7 @@ class CustomerFactory extends Factory
         return [
             "name" => $name,
             'type' => $type,
+            'address' => $this->faker->streetAddress(),
             'email' => $this->faker->unique()->safeEmail(),
             'city' => $this->faker->city(),
             'state' => $this->faker->state(),
